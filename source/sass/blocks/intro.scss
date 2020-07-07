@@ -1,0 +1,265 @@
+.intro {
+  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+}
+
+.intro__container {
+  width: 85%;
+  max-width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.intro__top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 28px;
+}
+
+.intro__main-link {
+  font-family: $second-font;
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.intro__tel {
+  font-family: $second-font;
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.intro__info {
+  width: 34%;
+  min-width: 370px;
+  padding-top: 113px;
+  margin-right: 5.7%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  position: relative;
+}
+
+.intro__city {
+  font-family: $second-font;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: right;
+  margin-bottom: 13px;
+}
+
+.intro h1 {
+  font-family: $second-font;
+  font-size: 110px;
+  line-height: 109px;
+  font-weight: 700;
+  text-align: right;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin: 0;
+  margin-left: auto;
+}
+
+.intro__service-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left: 5%;
+  bottom: 145px;
+}
+
+.intro__service-item {
+  font-size: 14px;
+  line-height: 21px;
+  font-style: normal;
+  font-weight: normal;
+  text-align: right;
+  color: #ffffff;
+}
+
+.intro__buy-link {
+  font-family: $main-font;
+  font-size: 12px;
+  line-height: 14px;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  margin-top: 57px;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  padding: 19px 54px;
+  background-color: transparent;
+  border: 4px solid #ffffff;
+}
+
+.intro img {
+  width: 43.1%;
+  height: 556px;
+}
+
+.intro__social-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: auto;
+  margin-bottom: 44px;
+  margin-left: auto;
+}
+
+.intro__social-item {
+  margin-bottom: 14px;
+  text-align: right;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.intro__social-link {
+  font-family: $main-font;
+  font-size: 12px;
+  line-height: 14px;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+@media (max-width: $tablet-width) {
+  .intro {
+    background: conic-gradient(from 139.4deg at 20.7% 35.74%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+  }
+
+  .intro__container {
+    width: 88%;
+  }
+
+  .intro__top {
+    padding-top: 38px;
+    margin-bottom: 20px;
+  }
+
+  .intro__main-link {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+  }
+
+  .intro__tel {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+  }
+
+  .intro__info {
+    width: 47.6%;
+    min-width: auto;
+    padding-top: 55px;
+    margin-right: 4.4%;
+  }
+
+  .intro__city {
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 4px;
+  }
+
+  .intro h1 {
+    font-size: 86px;
+    line-height: 86px;
+    width: 80%;
+  }
+
+  .intro__service-list {
+    left: 0;
+    bottom: 119px;
+  }
+
+  .intro__buy-link {
+    padding: 20px 30px;
+    margin-top: 41px;
+  }
+
+  .intro img {
+    width: 48%;
+    height: 390px;
+  }
+
+  .intro__social-list {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .intro {
+    background: conic-gradient(from 171.43deg at 35.31% 34.22%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+  }
+
+  .intro__container {
+    width: 91%;
+  }
+
+  .intro__top {
+    padding-top: 18px;
+  }
+
+  .intro__main-link {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .intro__tel {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .intro__info {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .intro img {
+    display: none;
+  }
+
+  .intro__city {
+    font-size: 28px;
+    line-height: 28px;
+    margin-bottom: 11px;
+  }
+
+  .intro h1 {
+    font-size: 78px;
+    line-height: 78px;
+    width: 220px;
+  }
+
+  .intro__service-list {
+    bottom: 195px;
+  }
+
+  .intro__buy-link {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 23px;
+    padding-bottom: 19px;
+    margin-bottom: 78px;
+  }
+}
