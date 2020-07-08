@@ -80,6 +80,7 @@ body {
   width: 85%;
   max-width: 1160px;
   margin: 0 auto;
+  padding-bottom: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -219,9 +220,10 @@ body {
 
 @media (max-width: 1199px) {
   .intro {
-    background: conic-gradient(from 139.4deg at 20.7% 35.74%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg); }
+    background: conic-gradient(from 139.4deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg); }
   .intro__container {
-    width: 88%; }
+    width: 88%;
+    padding-bottom: 82px; }
   .intro__top {
     padding-top: 38px;
     margin-bottom: 20px; }
@@ -262,7 +264,8 @@ body {
   .intro {
     background: conic-gradient(from 171.43deg at 35.31% 34.22%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg); }
   .intro__container {
-    width: 91%; }
+    width: 91%;
+    padding-bottom: 0; }
   .intro__top {
     padding-top: 18px; }
   .intro__main-link {
@@ -297,3 +300,161 @@ body {
     padding-top: 23px;
     padding-bottom: 19px;
     margin-bottom: 78px; } }
+
+.about__container {
+  width: 85%;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding-top: 120px;
+  padding-bottom: 235px;
+  padding-left: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative; }
+
+.about__text {
+  width: 32%;
+  padding-top: 47px;
+  margin-right: 8%; }
+
+.about h2 {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: #102654;
+  margin: 0;
+  margin-bottom: 8px; }
+
+.about span {
+  font-size: 18px;
+  line-height: 27px;
+  font-style: normal;
+  font-weight: normal;
+  color: #102654;
+  display: block;
+  margin-bottom: 39px; }
+
+.about p {
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 300;
+  color: #102654;
+  margin: 0;
+  margin-bottom: 8px; }
+
+.about img {
+  width: 660px;
+  height: 401px; }
+
+.about__video {
+  width: 364px;
+  height: 228px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 53.4%;
+  top: 408px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 5;
+  background-image: url("../img/video-desktop@1x.jpg");
+  background-size: 100% 100%; }
+
+.about__button {
+  width: 72px;
+  height: 72px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+
+.about__button svg {
+  width: 17px;
+  height: 17px; }
+
+@media (max-width: 1199px) {
+  .about__container {
+    width: 88%;
+    padding-top: 100px;
+    padding-bottom: 178px;
+    padding-left: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .about__text {
+    width: 100%;
+    padding-top: 0;
+    padding-right: 10%;
+    padding-left: 10%;
+    margin-right: 0; }
+  .about h2 {
+    font-size: 42px;
+    line-height: 42px;
+    text-align: center; }
+  .about span {
+    margin-bottom: 34px;
+    text-align: center; }
+  .about p {
+    margin-bottom: 43px;
+    text-align: center; }
+  .about__optional-description {
+    display: none; }
+  .about img {
+    width: 100%;
+    height: 345px; }
+  .about__video {
+    width: 266px;
+    height: 167px;
+    left: 50%;
+    top: 587px; }
+  .about__button {
+    width: 52px;
+    height: 52px; }
+  .about__button svg {
+    width: 12px;
+    height: 12px; } }
+
+@media (max-width: 767px) {
+  .about__container {
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 71px; }
+  .about__text {
+    padding-right: 5%;
+    padding-left: 5%; }
+  .about h2 {
+    font-size: 32px;
+    line-height: 32px;
+    text-align: left;
+    margin-bottom: 5px; }
+  .about span {
+    margin-bottom: 24px;
+    text-align: left; }
+  .about p {
+    width: 90%;
+    margin-bottom: 33px;
+    text-align: left; }
+  .about img {
+    height: 313px;
+    margin-bottom: 36px; }
+  .about__video {
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 0;
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
