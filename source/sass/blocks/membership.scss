@@ -1,0 +1,158 @@
+.membership {
+  background: url("../img/barbell.png"), linear-gradient(to top, #ffffff 7.5%, #f8f9fc 7.5%);
+  background-repeat: no-repeat, no-repeat;
+  background-position-x: right, center;
+  background-position-y: 507px, top;
+}
+
+.membership__container {
+  width: 85%;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding-top: 118px;
+  padding-bottom: 190px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.membership h2 {
+  font-family: $second-font;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: #102654;
+  text-align: center;
+  width: 80%;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.membership__tabs {
+  margin: 0 auto;
+  margin-bottom: 38px;
+  padding-bottom: 11px;
+  display: inline-flex;
+  justify-content: center;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+}
+
+.membership__tab-button {
+  font-family: $main-font;
+  font-size: 20px;
+  line-height: 30px;
+  font-style: normal;
+  font-weight: normal;
+  color: rgba(16, 38, 84, 0.5);
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin-right: 47px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.membership__tab-button--active {
+  color: #102654;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 67px;
+    height: 2px;
+    background-color: #d10a42;
+    position: absolute;
+    left: 0;
+    top: 41px;
+  }
+}
+
+.membership__type-list {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.membership__type-item {
+  width: 31%;
+  background-color: #ffffff;
+}
+
+.membership__type-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 63px;
+  padding-bottom: 68px;
+  text-decoration: none;
+  position: relative;
+
+  &:hover {
+    background-image: url("../img/border.png");
+    background-size: 100%;
+  }
+}
+
+.membership__type-link h3 {
+  font-size: 26px;
+  line-height: 29px;
+  font-style: normal;
+  font-weight: bold;
+  color: #102654;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.membership__time {
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: normal;
+  color: #495A7D;
+  margin-bottom: 65px;
+}
+
+.membership__shadow {
+  font-size: 100px;
+  line-height: 150px;
+  font-style: normal;
+  font-weight: bold;
+  color: #e8e8e8;
+  opacity: 0.48;
+  position: absolute;
+  top: 137px;
+}
+
+.membership__price {
+  font-size: 60px;
+  line-height: 90px;
+  font-style: normal;
+  font-weight: bold;
+  color: #103AAE;
+  margin-bottom: 35px;
+  z-index: 5;
+}
+
+.membership__buy {
+  font-size: 12px;
+  line-height: 14px;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #102654;
+  background-color: transparent;
+  padding: 23px 12%;
+  border: 2px solid #102654;
+}
+
+.membership__type-link:hover .membership__buy {
+  background: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
+  color: #ffffff;
+  border-color: inherit;
+}
