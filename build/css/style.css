@@ -74,7 +74,7 @@ body {
   overflow: hidden; }
 
 .intro {
-  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg); }
+  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg); }
 
 .intro__container {
   width: 85%;
@@ -262,7 +262,7 @@ body {
 
 @media (max-width: 767px) {
   .intro {
-    background: conic-gradient(from 171.43deg at 35.31% 34.22%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg); }
+    background: conic-gradient(from 171.43deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg); }
   .intro__container {
     width: 91%;
     padding-bottom: 0; }
@@ -460,8 +460,8 @@ body {
             transform: translateX(0); } }
 
 .membership {
-  background: url("../img/barbell.png"), -webkit-gradient(linear, left bottom, left top, color-stop(7.5%, #ffffff), color-stop(7.5%, #f8f9fc));
-  background: url("../img/barbell.png"), linear-gradient(to top, #ffffff 7.5%, #f8f9fc 7.5%);
+  background: url("../img/barbell-desktop.png"), -webkit-gradient(linear, left bottom, left top, color-stop(7.5%, #ffffff), color-stop(7.5%, #f8f9fc));
+  background: url("../img/barbell-desktop.png"), linear-gradient(to top, #ffffff 7.5%, #f8f9fc 7.5%);
   background-repeat: no-repeat, no-repeat;
   background-position-x: right, center;
   background-position-y: 507px, top; }
@@ -514,33 +514,44 @@ body {
   background-color: transparent;
   border: none;
   padding: 0;
-  margin-right: 47px; }
+  margin-right: 47px;
+  cursor: pointer; }
   .membership__tab-button:last-child {
     margin-right: 0; }
+  .membership__tab-button:hover {
+    opacity: 0.4; }
+  .membership__tab-button:active {
+    opacity: 0.2; }
 
 .membership__tab-button--active {
   color: #102654;
-  position: relative; }
+  cursor: default;
+  position: relative;
+  outline: none; }
   .membership__tab-button--active::after {
     content: "";
-    width: 67px;
+    width: 100%;
     height: 2px;
     background-color: #d10a42;
     position: absolute;
     left: 0;
     top: 41px; }
+  .membership__tab-button--active:hover {
+    opacity: 1; }
 
 .membership__type-list {
   width: 100%;
   list-style: none;
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  .membership__type-list--active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
 
 .membership__type-item {
   width: 31%;
@@ -561,9 +572,18 @@ body {
   padding-bottom: 68px;
   text-decoration: none;
   position: relative; }
-  .membership__type-link:hover {
-    background-image: url("../img/border.png");
-    background-size: 100%; }
+  .membership__type-link::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 7px solid;
+    -o-border-image: linear-gradient(to right bottom, red, blue);
+       border-image: -webkit-gradient(linear, left top, right bottom, from(red), to(blue));
+       border-image: linear-gradient(to right bottom, red, blue);
+    position: absolute;
+    top: 0;
+    left: 0; }
 
 .membership__type-link h3 {
   font-size: 26px;
@@ -617,3 +637,83 @@ body {
   background: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
   color: #ffffff;
   border-color: inherit; }
+
+@media (max-width: 1199px) {
+  .membership {
+    background: url("../img/barbell-tablet.png"), -webkit-gradient(linear, left bottom, left top, color-stop(5%, #ffffff), color-stop(5%, #f8f9fc));
+    background: url("../img/barbell-tablet.png"), linear-gradient(to top, #ffffff 5%, #f8f9fc 5%);
+    background-repeat: no-repeat, no-repeat;
+    background-position-x: right, center;
+    background-position-y: 1461px, top; }
+  .membership__container {
+    width: 88%;
+    padding-top: 100px;
+    padding-bottom: 190px; }
+  .membership h2 {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 30px; }
+  .membership__tabs {
+    margin-bottom: 45px; }
+  .membership__tab-button {
+    font-size: 18px;
+    line-height: 27px;
+    margin-right: 55px; }
+  .membership__type-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .membership__type-item {
+    width: 65.5%;
+    margin-bottom: 39px; }
+    .membership__type-item:last-child {
+      margin-bottom: 0; }
+  .membership__tab-button--active::after {
+    top: 38px; }
+  .membership__buy {
+    padding-right: 10%;
+    padding-left: 10%; } }
+
+@media (max-width: 767px) {
+  .membership {
+    background-color: #f8f9fc;
+    background-image: none; }
+  .membership__container {
+    width: 91%;
+    padding-top: 68px;
+    padding-bottom: 70px; }
+  .membership h2 {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 23px; }
+  .membership__tab-button {
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 46px; }
+  .membership__type-item {
+    width: 100%;
+    margin-bottom: 46px; }
+  .membership__type-link {
+    padding-top: 40px;
+    padding-bottom: 55px; }
+  .membership__type-link h3 {
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 9px; }
+  .membership__time {
+    margin-bottom: 54px; }
+  .membership__shadow {
+    font-size: 80px;
+    line-height: 120px;
+    top: 107px; }
+  .membership__price {
+    font-size: 48px;
+    line-height: 72px;
+    margin-bottom: 31px; }
+  .membership__buy {
+    padding-right: 15%;
+    padding-left: 15%; } }
