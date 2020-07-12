@@ -940,7 +940,8 @@ body {
 .trainers__container {
   width: 85%;
   max-width: 1160px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-top: 88px; }
 
 .trainers h2 {
   font-family: "Bebas Neue", "Arial", sans-serif;
@@ -949,20 +950,21 @@ body {
   letter-spacing: 0.03em;
   color: #102654;
   margin: 0;
-  margin-bottom: 52px;
-  padding-top: 88px; }
+  margin-bottom: 52px; }
 
 .trainers__slider {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .trainers__slide {
   width: 22.4%;
-  margin-right: 40px;
   position: relative; }
-  .trainers__slide:last-child {
-    margin-right: 0; }
   .trainers__slide:hover .trainers__popup {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -985,7 +987,7 @@ body {
 
 .trainers__slide img {
   display: block;
-  width: 260px;
+  width: 100%;
   height: 294px;
   z-index: -1; }
 
@@ -993,7 +995,9 @@ body {
   width: 100%;
   height: 100%;
   padding-top: 52px;
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1011,7 +1015,7 @@ body {
   line-height: 27px;
   font-style: normal;
   font-weight: bold;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0; }
 
 .trainers__popup span {
@@ -1033,7 +1037,7 @@ body {
   line-height: 21px;
   font-style: normal;
   font-weight: normal;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 14px;
   padding-left: 26px;
   position: relative; }
@@ -1048,3 +1052,38 @@ body {
     position: absolute;
     top: 7px;
     left: 10px; }
+
+@media (max-width: 1199px) {
+  .trainers__container {
+    width: 88%;
+    padding-top: 68px; }
+  .trainers h2 {
+    font-size: 42px;
+    line-height: 42px;
+    text-align: center;
+    margin-bottom: 41px; }
+  .trainers__slider {
+    padding-right: 8%;
+    padding-left: 8%; }
+  .trainers__slide {
+    width: 47.4%; } }
+
+@media (max-width: 767px) {
+  .trainers__container {
+    width: 91%;
+    padding-top: 38px; }
+  .trainers h2 {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 43px; }
+  .trainers__slider {
+    padding-right: 11%;
+    padding-left: 11%; }
+  .trainers__slide {
+    width: 100%; }
+  .trainers__slide img {
+    height: 274px; }
+  .trainers__popup {
+    padding-top: 42px; }
+  .trainers__popup-list {
+    width: 78%; } }
