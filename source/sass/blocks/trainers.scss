@@ -3,6 +3,7 @@
   max-width: 1160px;
   margin: 0 auto;
   padding-top: 88px;
+  padding-bottom: 120px;
 }
 
 .trainers h2 {
@@ -56,7 +57,7 @@
   width: 100%;
   height: 100%;
   padding-top: 52px;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   background-color: rgba(16, 38, 84, 0.89);
