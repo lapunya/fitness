@@ -7,6 +7,9 @@
   max-width: 1160px;
   margin: 0 auto;
   padding-top: 118px;
+  padding-bottom: 120px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .advantages h2 {
@@ -16,6 +19,7 @@
   letter-spacing: 0.03em;
   color: #102654;
   text-align: center;
+  width: 100%;
   margin: 0;
   margin-bottom: 70px;
 }

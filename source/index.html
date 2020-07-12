@@ -310,20 +310,30 @@
       <div class="stock__container">
         <h2>Акции</h2>
         <div class="stock__year">
-          <p>Безлимитный абонемент в тренажерный зал</p>
-          <a href="">Подробнее</a>
-          <img src="" width="280" height="462" alt="Довольная клиент">
+          <div class="stock__text">
+            <div class="stock__price">
+              <span>Год</span>
+              <b>4999</b>
+            </div>
+            <p>Безлимитный абонемент в тренажерный зал</p>
+            <a class="stock__link" href="">Подробнее</a>
+          </div>
+          <picture>
+            <source srcset="img/stock-mobile.jpg" media="(max-width: 767px)">
+            <source srcset="img/stock-tablet.jpg" media="(max-width: 1199px)">
+            <img src="img/stock-desktop.jpg" width="280" height="462" alt="Довольная клиент">
+          </picture>
         </div>
         <ul class="stock__list">
           <li class="stock__item">
             <h3>Месяц бесплатно</h3>
             <p>Приведи друга, получи абонемент в подарок</p>
-            <a href="">Подробнее</a>
+            <a class="stock__link stock__link--blue" href="">Подробнее</a>
           </li>
           <li class="stock__item">
             <h3>Скидка 20%</h3>
             <p>Корпоративный фитнес с командой</p>
-            <a href="">Подробнее</a>
+            <a class="stock__link stock__link--blue" href="">Подробнее</a>
           </li>
         </ul>
       </div>
