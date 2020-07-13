@@ -34,6 +34,14 @@
   letter-spacing: 0.03em;
   color: #ffffff;
   text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .intro__info {
@@ -106,6 +114,14 @@
   padding: 19px 54px;
   background-color: transparent;
   border: 4px solid #ffffff;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .intro img {
@@ -140,6 +156,14 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (max-width: $tablet-width) {

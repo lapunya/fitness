@@ -68,7 +68,7 @@
           <img src="img/gym-desktop@1x.jpg" width="660" height="401" alt="Тренажерный зал">
         </picture>
         <div class="about__video">
-          <button class="about__button" type="button">
+          <button class="about__button" type="button" aria-label="Кнопка play">
             <svg width="17" height="17">
               <use xlink:href="img/sprite.svg#logo-play"></use>
             </svg>
@@ -341,6 +341,29 @@
             <a class="stock__link stock__link--blue" href="">Подробнее</a>
           </li>
         </ul>
+      </div>
+    </section>
+    <section class="review">
+      <div class="review__container">
+        <h2>Отзывы</h2>
+        <button class="review__button" type="button" aria-label="Предыдущий слайд">
+          <svg width="16" height="32" fill="none">
+            <use xlink:href="img/sprite.svg#logo-prev"></use>
+          </svg>
+        </button>
+        <div class="review__card">
+          <img src="img/review.png" width="80" height="80" alt="Фото клиента">
+          <blockquote>
+            <h3>Анна Орлова</h3>
+            «Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал
+            дружелюбный. Зал просторный, даже в вечернее время нет очередей»
+          </blockquote>
+        </div>
+        <button class="review__button" type="button" aria-label="Следующий слайд">
+          <svg width="16" height="32" fill="none">
+            <use xlink:href="img/sprite.svg#logo-next"></use>
+          </svg>
+        </button>
       </div>
     </section>
   </main>

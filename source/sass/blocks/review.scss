@@ -1,0 +1,84 @@
+.review__container {
+  width: 85%;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding-top: 118px;
+  padding-right: 13%;
+  padding-bottom: 120px;
+  padding-left: 13%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review h2 {
+  font-family: $second-font;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: #102654;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 52px;
+}
+
+.review__card {
+  width: 84%;
+  display: flex;
+  padding-top: 62px;
+  padding-right: 60px;
+  padding-bottom: 58px;
+  padding-left: 62px;
+  background: #1c3374;
+  box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);
+}
+
+.review__card img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin-right: 6%;
+}
+
+.review__card h3 {
+  font-size: 20px;
+  line-height: 20px;
+  font-style: normal;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.review__card blockquote {
+  font-size: 16px;
+  line-height: 22px;
+  font-style: normal;
+  font-weight: normal;
+  color: #ffffff;
+  margin: 0;
+}
+
+.review__button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:hover svg {
+    opacity: 0.6;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+    outline: none;
+  }
+}
+
+.review__button svg {
+  width: 16px;
+  height: 32px;
+}
+

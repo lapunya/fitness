@@ -73,6 +73,15 @@
   border-radius: 50%;
   background: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .about__button svg {
