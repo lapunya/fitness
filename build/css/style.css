@@ -73,6 +73,11 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto; }
+
 .intro {
   background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg); }
 
@@ -1800,6 +1805,12 @@ body {
   border-left: none;
   border-right: none;
   border-bottom: 1px solid #74819c; }
+  .contacts__input:hover {
+    opacity: 0.6; }
+  .contacts__input:active {
+    opacity: 0.3; }
+  .contacts__input:focus {
+    outline: 2px solid #9b9b9b; }
 
 .contacts__button {
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -1948,3 +1959,163 @@ body {
     .contacts__column--right {
       padding-left: 0;
       margin-bottom: 0; } }
+
+.footer {
+  background-color: #030a1a;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto; }
+
+.footer__container {
+  width: 85%;
+  margin: 0 auto;
+  max-width: 1160px;
+  padding-top: 42px;
+  padding-bottom: 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.footer__list {
+  list-style: none;
+  margin: 0;
+  margin-right: 40px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .footer__list--right {
+    margin-right: 0; }
+
+.footer__item {
+  margin-right: 40px; }
+  .footer__item:last-child {
+    margin-right: 0; }
+
+.footer__main-link {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 24%; }
+
+.footer__link {
+  font-size: 14px;
+  line-height: 16px;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  color: #ffffff; }
+  .footer__link:hover {
+    opacity: 0.6; }
+  .footer__link:active {
+    opacity: 0.3; }
+
+.footer__social-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.footer__social-item {
+  margin-right: 25px; }
+  .footer__social-item:last-child {
+    margin-right: 0; }
+
+.footer__social-icon {
+  width: 24px;
+  height: 13px; }
+  .footer__social-icon--insta {
+    height: 24px; }
+  .footer__social-icon--fb {
+    width: 12px;
+    height: 24px; }
+
+.footer__social-link:hover .footer__social-icon {
+  opacity: 0.6; }
+
+.footer__social-link:active .footer__social-icon {
+  opacity: 0.3; }
+
+@media (max-width: 1199px) {
+  .footer__container {
+    width: 88%;
+    padding-top: 45px;
+    padding-bottom: 41px; }
+  .footer__main-link {
+    font-size: 24px;
+    line-height: 24px;
+    margin-right: 9%; }
+  .footer__list {
+    margin-right: 31px; }
+  .footer__item {
+    margin-right: 31px; }
+  .footer__social-item {
+    margin-right: 20px; } }
+
+@media (max-width: 767px) {
+  .footer__container {
+    width: 91%;
+    padding-top: 47px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    position: relative; }
+  .footer__main-link {
+    font-size: 20px;
+    line-height: 20px;
+    position: absolute;
+    left: 0;
+    top: 48px; }
+  .footer__list {
+    width: 45%;
+    margin-right: 10%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .footer__list--right {
+      margin-right: 0; }
+  .footer__item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 22px; }
+    .footer__item:last-child {
+      margin-bottom: 0; }
+  .footer__link {
+    font-size: 16px;
+    line-height: 19px; }
+  .footer__social-list {
+    margin-left: 0;
+    margin-top: 35px; }
+  .footer__social-item {
+    margin-right: 36px; }
+  .footer__social-icon {
+    width: 32px;
+    height: 17px; }
+    .footer__social-icon--insta {
+      width: 27px;
+      height: 27px; }
+    .footer__social-icon--fb {
+      width: 14px;
+      height: 27px; } }
