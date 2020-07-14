@@ -1739,8 +1739,8 @@ body {
     text-align: left; } }
 
 .contacts {
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #102654), color-stop(50%, #ffffff));
-  background: linear-gradient(to right, #102654 50%, #ffffff 50%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(50.01%, #102654), color-stop(50.01%, #ffffff));
+  background: linear-gradient(to right, #102654 50.01%, #ffffff 50.01%);
   border-top: 1px solid #74819C; }
 
 .contacts__container {
@@ -1754,10 +1754,13 @@ body {
 
 .contacts__wrap {
   width: 50%;
-  padding-right: 170px;
-  padding-bottom: 69px; }
+  padding-right: 14.5%;
+  padding-bottom: 64px;
+  background-color: #102654; }
   .contacts__wrap--white {
-    padding-left: 120px; }
+    background-color: #ffffff;
+    padding-right: 1%;
+    padding-left: 10.5%; }
 
 .contacts__title {
   font-family: "Bebas Neue", "Arial", sans-serif;
@@ -1769,6 +1772,8 @@ body {
   margin: 0;
   margin-bottom: 39px; }
   .contacts__title--blue {
+    width: 100%;
+    margin-bottom: 41px;
     color: #102654; }
 
 .contacts form {
@@ -1809,4 +1814,137 @@ body {
   padding: 16px 0;
   margin-top: 28px;
   background-color: transparent;
-  border: 3px solid #ffffff; }
+  border: 3px solid #ffffff;
+  cursor: pointer; }
+  .contacts__button:hover {
+    opacity: 0.6; }
+  .contacts__button:active {
+    opacity: 0.3; }
+
+.contacts__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  position: relative; }
+  .contacts__box::before {
+    content: "";
+    width: 1px;
+    height: 91%;
+    background-color: #74819c;
+    position: absolute;
+    top: 4px;
+    left: 52%; }
+
+.contacts__column {
+  width: 40%; }
+  .contacts__column--right {
+    margin-left: auto;
+    padding-left: 5%; }
+
+.contacts__text {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 20px; }
+  .contacts__text:last-child {
+    margin-bottom: 0; }
+
+.contacts__text b {
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: bold;
+  color: #102654;
+  width: 100%;
+  margin-bottom: 2px; }
+
+.contacts__text span {
+  font-size: 14px;
+  line-height: 21px;
+  font-style: normal;
+  font-weight: normal;
+  color: #102654; }
+
+.contacts__link {
+  font-size: 14px;
+  line-height: 21px;
+  font-style: normal;
+  font-weight: normal;
+  color: #102654;
+  text-decoration: none; }
+  .contacts__link:hover {
+    opacity: 0.6; }
+  .contacts__link:active {
+    opacity: 0.3; }
+
+@media (max-width: 1199px) {
+  .contacts {
+    background: linear-gradient(to bottom, #102654 324px, #ffffff 324px);
+    border: none; }
+  .contacts__container {
+    width: 88%;
+    padding-top: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .contacts__wrap {
+    width: 100%;
+    padding-top: 69px;
+    padding-right: 17%;
+    padding-bottom: 69px;
+    padding-left: 13%; }
+    .contacts__wrap--white {
+      padding-bottom: 61px; }
+  .contacts__title {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 33px; }
+  .contacts__input {
+    width: 44%; }
+  .contacts__box::before {
+    left: 56%; }
+  .contacts__text b {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 6px; }
+  .contacts__text span {
+    font-size: 18px;
+    line-height: 27px; }
+  .contacts__link {
+    font-size: 18px;
+    line-height: 27px; }
+  .contacts__column {
+    width: 46%; }
+    .contacts__column--right {
+      padding-left: 12%; } }
+
+@media (max-width: 767px) {
+  .contacts {
+    background: linear-gradient(to bottom, #102654 386px, #ffffff 386px); }
+  .contacts__container {
+    width: 91%; }
+  .contacts__wrap {
+    padding-top: 70px;
+    padding-right: 0;
+    padding-left: 0; }
+  .contacts__title {
+    font-size: 32px;
+    line-height: 32px; }
+  .contacts__input {
+    width: 100%;
+    margin-bottom: 32px; }
+  .contacts__button {
+    margin-top: 6px; }
+  .contacts__box::before {
+    display: none; }
+  .contacts__column {
+    width: 100%;
+    margin-bottom: 19px; }
+    .contacts__column--right {
+      padding-left: 0;
+      margin-bottom: 0; } }
