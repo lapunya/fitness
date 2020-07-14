@@ -79,6 +79,8 @@ body {
           flex: 1 0 auto; }
 
 .intro {
+  background: -webkit-gradient(linear, left bottom, right top, from(#003d85), to(#b80027));
+  background: linear-gradient(to top right, #003d85, #b80027);
   background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg); }
 
 .intro__container {
@@ -499,9 +501,13 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .membership h2 {
   font-family: "Bebas Neue", "Arial", sans-serif;
@@ -1405,6 +1411,7 @@ body {
   background: linear-gradient(to right, #ed0233 50%, #528be5 50%); }
 
 .stock__text {
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1671,6 +1678,7 @@ body {
   margin-bottom: 14px; }
 
 .review__card blockquote {
+  width: 330px;
   font-size: 16px;
   line-height: 22px;
   font-style: normal;
@@ -1736,6 +1744,7 @@ body {
     top: 22%;
     left: 40px; }
   .review__card blockquote {
+    width: 100%;
     text-align: center; }
   .review__card h3 {
     line-height: 24px;
