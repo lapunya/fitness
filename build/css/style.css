@@ -2454,6 +2454,7 @@ button.swiper-pagination-bullet {
   background-color: transparent;
   width: 46%;
   padding: 6px 0;
+  padding-left: 2px;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -2463,7 +2464,7 @@ button.swiper-pagination-bullet {
   .contacts__input:active {
     opacity: 0.3; }
   .contacts__input:focus {
-    outline: 2px solid #9b9b9b; }
+    outline: 1px solid #9b9b9b; }
 
 .contacts__button {
   font-family: "Roboto Condensed", "Arial", sans-serif;
