@@ -1,6 +1,6 @@
 .trainers__container {
   width: 85%;
-  max-width: 1160px;
+  max-width: 1272px;
   margin: 0 auto;
   padding-top: 88px;
   padding-bottom: 120px;
@@ -14,21 +14,6 @@
   color: #102654;
   margin: 0;
   margin-bottom: 52px;
-}
-
-.trainers__slider {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.trainers__slide {
-  width: 22.4%;
-  position: relative;
-
-  &:hover .trainers__popup {
-    display: flex;
-  }
 }
 
 .trainers__slide-title {
@@ -129,36 +114,19 @@
     text-align: center;
     margin-bottom: 41px;
   }
-
-  .trainers__slider {
-    padding-right: 8%;
-    padding-left: 8%;
-  }
-
-  .trainers__slide {
-    width: 47.4%;
-  }
 }
 
 @media (max-width: $mobile-width) {
   .trainers__container {
     width: 91%;
     padding-top: 38px;
+    padding-bottom: 69px;
   }
 
   .trainers h2 {
     font-size: 32px;
     line-height: 32px;
     margin-bottom: 43px;
-  }
-
-  .trainers__slider {
-    padding-right: 11%;
-    padding-left: 11%;
-  }
-
-  .trainers__slide {
-    width: 100%;
   }
 
   .trainers__slide img {
