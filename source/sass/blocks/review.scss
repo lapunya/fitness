@@ -62,27 +62,6 @@
   margin: 0;
 }
 
-.review__button {
-  padding: 0;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-
-  &:hover svg {
-    opacity: 0.6;
-  }
-
-  &:active svg {
-    opacity: 0.3;
-    outline: none;
-  }
-}
-
-.review__button svg {
-  width: 16px;
-  height: 32px;
-}
-
 @media (max-width: $tablet-width) {
   .review__container {
     width: 88%;
@@ -121,7 +100,8 @@
   }
 
   .review__card {
-    width: 78%;
+    width: 87%;
+    margin: 0 auto;
     padding-top: 51px;
     padding-right: 25px;
     padding-bottom: 36px;
