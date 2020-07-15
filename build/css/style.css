@@ -751,7 +751,8 @@ button.swiper-pagination-bullet {
     opacity: 0.3; }
 
 .intro img {
-  width: 43.1%;
+  display: block;
+  width: 500px;
   height: 556px; }
 
 .intro__social-list {
@@ -819,7 +820,7 @@ button.swiper-pagination-bullet {
     padding: 20px 30px;
     margin-top: 41px; }
   .intro img {
-    width: 48%;
+    width: 324px;
     height: 390px; }
   .intro__social-list {
     display: none; } }

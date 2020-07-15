@@ -37,7 +37,15 @@
           </ul>
           <a class="intro__buy-link" href="#membership">Купить абонемент</a>
         </div>
-        <img src="img/coach-desktop@1x.jpg" width="500" height="556" alt="Один из тренеров">
+        <picture>
+          <source type="image/webp" srcset="img/coach-tablet@1x.webp 1x, img/coach-tablet@2x.webp 2x"
+            media="(max-width: 1199px)">
+          <source type="image/webp" srcset="img/coach-desktop@1x.webp 1x, img/coach-desktop@2x.webp 2x">
+          <!-- 1х: 324px; 2x: 648px -->
+          <source srcset="img/coach-tablet@1x.jpg 1x, img/coach-tablet@2x.jpg 2x" media="(max-width: 1199px)">
+          <!-- 1х: 500px; 2x: 1000px -->
+          <img src="img/coach-desktop@1x.jpg" srcset="img/coach-desktop@2x.jpg" width="500" height="556" alt="Один из тренеров">
+        </picture>
         <ul class="intro__social-list">
           <li class="intro__social-item">
             <a class="intro__social-link" href="#">Fb</a>
@@ -66,7 +74,7 @@
           <source type="image/webp" srcset="img/gym-mobile@1x.webp 1x, img/gym-mobile@2x.webp 2x"
             media="(max-width: 767px)">
           <source type="image/webp" srcset="img/gym-tablet@1x.webp 1x, img/gym-tablet@2x.webp 2x"
-            media="(max-width: 1023px)">
+            media="(max-width: 1199px)">
           <source type="image/webp" srcset="img/gym-desktop@1x.webp 1x, img/gym-desktop@2x.webp 2x">
           <!-- 1х: 320px; 2x: 640px -->
           <source srcset="img/gym-mobile@1x.jpg 1x, img/gym-mobile@2x.jpg 2x" media="(max-width: 767px)">
@@ -200,9 +208,18 @@
           <a class="promo__link" href="fillblank.html">Заполнить заявку</a>
         </div>
         <picture>
-          <source srcset="img/promo-mobile@1x.jpg" media="(max-width: 767px)">
-          <source srcset="img/promo-tablet@1x.jpg" media="(max-width: 1199px)">
-          <img src="img/promo-desktop@1x.jpg" width="660" height="500" alt="Соревнования">
+          <source type="image/webp" srcset="img/promo-mobile@1x.webp 1x, img/promo-mobile@2x.webp 2x"
+            media="(max-width: 767px)">
+          <source type="image/webp" srcset="img/promo-tablet@1x.webp 1x, img/promo-tablet@2x.webp 2x"
+            media="(max-width: 1199px)">
+          <source type="image/webp" srcset="img/promo-desktop@1x.webp 1x, img/promo-desktop@2x.webp 2x">
+          <!-- 1х: 290px; 2x: 580px -->
+          <source srcset="img/promo-mobile@1x.jpg 1x, img/promo-mobile@2x.jpg 2x" media="(max-width: 767px)">
+          <!-- 1х: 386px; 2x: 772px -->
+          <source srcset="img/promo-tablet@1x.jpg 1x, img/promo-tablet@2x.jpg 2x" media="(max-width: 1199px)">
+          <!-- 1х: 660px; 2x: 1320px -->
+          <img src="img/promo-desktop@1x.jpg" srcset="img/promo-desktop@2x.jpg 2x" width="660" height="500"
+            alt="Соревнования">
         </picture>
       </div>
     </section>
@@ -399,9 +416,18 @@
             <a class="stock__link" href="">Подробнее</a>
           </div>
           <picture>
-            <source srcset="img/stock-mobile.jpg" media="(max-width: 767px)">
-            <source srcset="img/stock-tablet.jpg" media="(max-width: 1199px)">
-            <img src="img/stock-desktop.jpg" width="280" height="462" alt="Довольная клиент">
+            <source type="image/webp" srcset="img/stock-mobile@1x.webp 1x, img/stock-mobile@2x.webp 2x"
+              media="(max-width: 767px)">
+            <source type="image/webp" srcset="img/stock-tablet@1x.webp 1x, img/stock-tablet@2x.webp 2x"
+              media="(max-width: 1199px)">
+            <source type="image/webp" srcset="img/stock-desktop@1x.webp 1x, img/stock-desktop@2x.webp 2x">
+            <!-- 1х: 290px; 2x: 580px -->
+            <source srcset="img/stock-mobile@1x.jpg 1x, img/stock-mobile@1x.jpg 1x" media="(max-width: 767px)">
+            <!-- 1х: 399px; 2x: 798px -->
+            <source srcset="img/stock-tablet@1x.jpg 1x, img/stock-tablet@2x.jpg 2x" media="(max-width: 1199px)">
+            <!-- 1х: 280px; 2x: 560px -->
+            <img src="img/stock-desktop@1x.jpg" srcset="img/stock-desktop@2x.jpg 2x" width="280" height="462"
+              alt="Довольная клиент">
           </picture>
         </div>
         <ul class="stock__list">
