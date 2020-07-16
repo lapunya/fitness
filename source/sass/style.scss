@@ -1,7 +1,8 @@
 @import "variables.scss";
 @import "fonts.scss";
 @import "base.scss";
-@import "swiper.min.scss";
+@import "vendor/swiper.min.scss";
+@import "blocks/header.scss";
 @import "blocks/main.scss";
 @import "blocks/intro.scss";
 @import "blocks/about.scss";

@@ -17,6 +17,7 @@
   list-style: none;
   margin: 0;
   margin-right: 40px;
+  max-width: 290px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -36,13 +37,12 @@
 }
 
 .footer__main-link {
-  font-family: $second-font;
-  font-size: 26px;
-  line-height: 26px;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-  text-decoration: none;
   margin-right: 24%;
+}
+
+.footer__main-link svg {
+  width: 89px;
+  height: 20px;
 }
 
 .footer__link {
@@ -66,6 +66,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  max-width: 200px;
   margin-left: auto;
   display: flex;
   flex-wrap: wrap;
@@ -112,9 +113,12 @@
   }
 
   .footer__main-link {
-    font-size: 24px;
-    line-height: 24px;
     margin-right: 9%;
+  }
+
+  .footer__main-link svg {
+    width: 82px;
+    height: 17px;
   }
 
   .footer__list {
@@ -140,11 +144,14 @@
   }
 
   .footer__main-link {
-    font-size: 20px;
-    line-height: 20px;
     position: absolute;
     left: 0;
     top: 48px;
+  }
+
+  .footer__main-link svg {
+    width: 68px;
+    height: 15px;
   }
 
   .footer__list {
