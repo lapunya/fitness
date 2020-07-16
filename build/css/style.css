@@ -1704,6 +1704,8 @@ button.swiper-pagination-bullet {
     text-align: center;
     margin-bottom: 41px;
     margin-left: 0; }
+  .trainers__slider-container {
+    width: 675px; }
   .trainers__swiper-container {
     width: 84%; } }
 
@@ -1716,6 +1718,9 @@ button.swiper-pagination-bullet {
     font-size: 32px;
     line-height: 32px;
     margin-bottom: 43px; }
+  .trainers__slider-container {
+    width: 100%;
+    max-width: 310px; }
   .trainers__swiper-container {
     width: 78%; }
   .trainers__slide img {
@@ -2143,7 +2148,8 @@ button.swiper-pagination-bullet {
     margin-bottom: 41px; }
   .stock__year {
     width: 100%;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    background: #ed0233; }
   .stock__text {
     padding-right: 6%;
     padding-left: 6%; }
