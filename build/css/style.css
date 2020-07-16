@@ -626,7 +626,7 @@ button.swiper-pagination-bullet {
 .intro {
   background: -webkit-gradient(linear, left bottom, right top, from(#003d85), to(#b80027));
   background: linear-gradient(to top right, #003d85, #b80027);
-  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg); }
+  background-image: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg); }
 
 .intro__container {
   width: 85%;
@@ -1175,7 +1175,7 @@ button.swiper-pagination-bullet {
   line-height: 24px;
   font-style: normal;
   font-weight: normal;
-  color: #495A7D;
+  color: #495a7d;
   margin-bottom: 65px; }
 
 .membership__shadow {
@@ -1193,7 +1193,7 @@ button.swiper-pagination-bullet {
   line-height: 90px;
   font-style: normal;
   font-weight: bold;
-  color: #103AAE;
+  color: #103aae;
   margin-bottom: 35px;
   z-index: 5; }
 
@@ -2100,7 +2100,7 @@ button.swiper-pagination-bullet {
   line-height: 32px;
   font-style: normal;
   font-weight: bold;
-  color: #1C3374;
+  color: #1c3374;
   margin: 0;
   margin-bottom: 8px; }
 
@@ -2299,8 +2299,8 @@ button.swiper-pagination-bullet {
   padding-bottom: 58px;
   padding-left: 60px;
   background: #1c3374;
-  -webkit-box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);
-          box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2); }
+  -webkit-box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
+          box-shadow: 0 0 40px rgba(28, 51, 116, 0.2); }
 
 .review__card img {
   display: block;
@@ -2391,7 +2391,7 @@ button.swiper-pagination-bullet {
 .contacts {
   background: -webkit-gradient(linear, left top, right top, color-stop(50.01%, #102654), color-stop(50.01%, #ffffff));
   background: linear-gradient(to right, #102654 50.01%, #ffffff 50.01%);
-  border-top: 1px solid #74819C; }
+  border-top: 1px solid #74819c; }
 
 .contacts__container {
   width: 85%;

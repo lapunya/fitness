@@ -2,7 +2,7 @@
 
 var trainersSwiperContainer = document.querySelector('.trainers__swiper-container');
 
-var trainersSwiper = new Swiper(trainersSwiperContainer, {
+var trainersSwiper =  new Swiper(trainersSwiperContainer, {
   breakpoints: {
     1199: {
       slidesPerView: 4,
