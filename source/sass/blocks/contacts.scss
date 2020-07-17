@@ -62,6 +62,7 @@
   border-left: none;
   border-right: none;
   border-bottom: 1px solid #74819c;
+  border-radius: 0;
 
   &:hover {
     opacity: 0.6;
@@ -73,6 +74,10 @@
 
   &:focus {
     outline: 1px solid #9b9b9b;
+  }
+
+  &::placeholder {
+    color: #ffffff;
   }
 }
 

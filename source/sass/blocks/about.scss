@@ -155,6 +155,8 @@
     width: 100%;
     padding-top: 70px;
     padding-bottom: 71px;
+    flex-direction: column;
+    align-items: center;
   }
 
   .about__text {
@@ -188,6 +190,7 @@
   .about__video {
     position: relative;
     width: 100%;
+    max-width: 320px;
     left: 0;
     top: 0;
     transform: translateX(0);

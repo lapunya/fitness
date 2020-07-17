@@ -1023,7 +1023,14 @@ button.swiper-pagination-bullet {
   .about__container {
     width: 100%;
     padding-top: 70px;
-    padding-bottom: 71px; }
+    padding-bottom: 71px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .about__text {
     padding-right: 5%;
     padding-left: 5%; }
@@ -1045,7 +1052,7 @@ button.swiper-pagination-bullet {
   .about__video {
     position: relative;
     width: 100%;
-    max-width: 400px;
+    max-width: 320px;
     left: 0;
     top: 0;
     -webkit-transform: translateX(0);
@@ -1063,7 +1070,7 @@ button.swiper-pagination-bullet {
   max-width: 1160px;
   margin: 0 auto;
   padding-top: 118px;
-  padding-bottom: 190px;
+  padding-bottom: 170px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1141,6 +1148,8 @@ button.swiper-pagination-bullet {
   margin: 0;
   padding: 0;
   display: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
@@ -1151,7 +1160,8 @@ button.swiper-pagination-bullet {
 
 .membership__type-item {
   width: 31%;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  margin-bottom: 20px; }
 
 .membership__type-link {
   display: -webkit-box;
@@ -1465,7 +1475,7 @@ button.swiper-pagination-bullet {
 
 .promo img {
   display: block;
-  width: 660px;
+  width: 100%;
   height: 500px; }
 
 @media (max-width: 1199px) {
@@ -1531,9 +1541,10 @@ button.swiper-pagination-bullet {
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #ed0233), color-stop(50%, #000049));
     background-image: linear-gradient(to bottom, #ed0233 50%, #000049 50%); }
   .promo__text {
-    width: 100%;
-    padding-right: 15.3%;
-    padding-left: 15.3%; }
+    width: 82%;
+    max-width: 450px; }
+  .promo h2 {
+    max-width: 230px; }
   .promo img {
     width: 290px; } }
 
@@ -2274,9 +2285,6 @@ button.swiper-pagination-bullet {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
@@ -2289,6 +2297,12 @@ button.swiper-pagination-bullet {
 
 .review__slide {
   width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -ms-flex-negative: 0;
@@ -2297,6 +2311,8 @@ button.swiper-pagination-bullet {
 .review__button-prev,
 .review__button-next {
   position: static;
+  -ms-flex-item-align: center;
+      align-self: center;
   padding: 0;
   margin-top: 5px;
   background-color: transparent;
@@ -2481,13 +2497,24 @@ button.swiper-pagination-bullet {
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 1px solid #74819c; }
+  border-bottom: 1px solid #74819c;
+  border-radius: 0; }
   .contacts__input:hover {
     opacity: 0.6; }
   .contacts__input:active {
     opacity: 0.3; }
   .contacts__input:focus {
     outline: 1px solid #9b9b9b; }
+  .contacts__input::-webkit-input-placeholder {
+    color: #ffffff; }
+  .contacts__input::-moz-placeholder {
+    color: #ffffff; }
+  .contacts__input:-ms-input-placeholder {
+    color: #ffffff; }
+  .contacts__input::-ms-input-placeholder {
+    color: #ffffff; }
+  .contacts__input::placeholder {
+    color: #ffffff; }
 
 .contacts__button {
   font-family: "Roboto Condensed", "Arial", sans-serif;
