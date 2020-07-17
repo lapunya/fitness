@@ -2,7 +2,6 @@
   background: linear-gradient(to top right, #003d85, #b80027);
   background-image: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   position: relative;
-  z-index: -1;
   margin-top: -54px;
   padding-top: 51px;
 }
@@ -150,10 +149,12 @@
   .intro__container {
     width: 88%;
     padding-bottom: 82px;
+    justify-content: space-between;
   }
 
   .intro__info {
     width: 47.6%;
+    max-width: 325px;
     min-width: auto;
     padding-top: 55px;
     margin-right: 4.4%;
@@ -205,7 +206,8 @@
 
   .intro__info {
     width: 100%;
-    margin-right: 0;
+    max-width: 300px;
+    margin: 0 auto;
   }
 
   .intro img {
