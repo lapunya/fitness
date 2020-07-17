@@ -14,22 +14,21 @@
 }
 
 .footer__list {
+  max-width: 500px;
   list-style: none;
   margin: 0;
-  margin-right: 40px;
-  max-width: 290px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-
-  &--right {
-    margin-right: 0;
-  }
 }
 
 .footer__item {
   margin-right: 40px;
+
+  &:first-child {
+    display: none;
+  }
 
   &:last-child {
     margin-right: 0;
@@ -122,7 +121,7 @@
   }
 
   .footer__list {
-    margin-right: 31px;
+    max-width: 400px;
   }
 
   .footer__item {
@@ -137,16 +136,18 @@
 @media (max-width: $mobile-width) {
   .footer__container {
     width: 91%;
-    padding-top: 47px;
+    padding-top: 50px;
+    padding-bottom: 46px;
     flex-wrap: wrap;
-    align-items: flex-end;
-    position: relative;
   }
 
   .footer__main-link {
-    position: absolute;
-    left: 0;
-    top: 48px;
+    display: none;
+    margin: 0;
+
+    &--mobile {
+      display: block;
+    }
   }
 
   .footer__main-link svg {
@@ -155,22 +156,43 @@
   }
 
   .footer__list {
-    width: 45%;
-    margin-right: 10%;
-    flex-direction: column;
-
-    &--right {
-      margin-right: 0;
-    }
+    width: 84%;
+    max-width: auto;
+    align-items: flex-start;
+    justify-content: space-between;
   }
 
   .footer__item {
-    width: 100%;
+    width: 34%;
     margin-right: 0;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
+
+    &:first-child {
+      display: block;
+    }
 
     &:last-child {
       margin-bottom: 0;
+    }
+
+    &--stock {
+      order: 1;
+    }
+
+    &--service {
+      order: 2;
+    }
+
+    &--trainers {
+      order: 3;
+    }
+
+    &--membership {
+      order: 4;
+    }
+
+    &--timetable {
+      order: 5;
     }
   }
 
@@ -180,8 +202,10 @@
   }
 
   .footer__social-list {
+    width: 100%;
+    max-width: 100%;
     margin-left: 0;
-    margin-top: 35px;
+    margin-top: 16px;
   }
 
   .footer__social-item {
