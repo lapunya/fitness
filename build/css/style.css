@@ -822,9 +822,9 @@ button.swiper-pagination-bullet {
   .intro__container {
     width: 88%;
     padding-bottom: 82px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .intro__info {
     width: 47.6%;
     max-width: 325px;
@@ -1365,7 +1365,8 @@ button.swiper-pagination-bullet {
   padding-top: 83px;
   padding-right: 6.6%;
   padding-bottom: 85px;
-  padding-left: 6.8%; }
+  padding-left: 6.8%;
+  background-color: #ed0233; }
 
 .promo h2 {
   font-family: "Bebas Neue", "Arial", sans-serif;
@@ -1542,7 +1543,8 @@ button.swiper-pagination-bullet {
     background-image: linear-gradient(to bottom, #ed0233 50%, #000049 50%); }
   .promo__text {
     width: 82%;
-    max-width: 450px; }
+    max-width: 450px;
+    background-color: transparent; }
   .promo h2 {
     max-width: 230px; }
   .promo img {
