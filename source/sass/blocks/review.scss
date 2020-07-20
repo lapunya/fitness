@@ -43,7 +43,6 @@
 .review__slide {
   width: auto;
   display: flex;
-  align-items: center;
   box-sizing: border-box;
   flex-shrink: 0;
 }
@@ -194,7 +193,7 @@
     height: 68px;
     position: absolute;
     transform: translateY(-50%);
-    top: 22%;
+    top: 74px;
     left: 40px;
   }
 
@@ -204,6 +203,7 @@
   }
 
   .review__card h3 {
+    max-width: 100px;
     line-height: 24px;
     margin-bottom: 24px;
     margin-left: 99px;

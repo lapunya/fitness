@@ -2302,9 +2302,6 @@ button.swiper-pagination-bullet {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -ms-flex-negative: 0;
@@ -2426,12 +2423,13 @@ button.swiper-pagination-bullet {
     position: absolute;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    top: 22%;
+    top: 74px;
     left: 40px; }
   .review__card blockquote {
     width: 100%;
     text-align: center; }
   .review__card h3 {
+    max-width: 100px;
     line-height: 24px;
     margin-bottom: 24px;
     margin-left: 99px;
