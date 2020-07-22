@@ -2416,7 +2416,9 @@ button.swiper-pagination-bullet {
     padding-right: 25px;
     padding-bottom: 36px;
     padding-left: 25px;
-    position: relative; }
+    position: relative;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
   .review__card img {
     width: 68px;
     height: 68px;
@@ -2646,7 +2648,8 @@ button.swiper-pagination-bullet {
   .contacts__wrap {
     padding-top: 70px;
     padding-right: 0;
-    padding-left: 0; }
+    padding-left: 0;
+    background-color: transparent; }
   .contacts__title {
     font-size: 32px;
     line-height: 32px; }
